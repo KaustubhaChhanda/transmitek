@@ -6,7 +6,7 @@ import { SectionHeading } from '../ui/SectionHeading';
 import { ShieldCheck, Compass, Users } from 'lucide-react';
 
 // Factory image import
-import factoryImg from '../../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/factory-view-1-2.jpg';
+import factoryImg from '../../assets/factory-view-1-2.jpg';
 
 export const CompanyIntro: React.FC = () => {
   const listItems = [

@@ -7,8 +7,8 @@ import { Button } from '../components/ui/Button';
 import { ChevronRight, Mail, Phone, MapPin, Send } from 'lucide-react';
 
 // QR Code Imports
-import qrWechat from '../../../Contact Us - TRANSMITEK_files/wechat-transmitek.jpg';
-import qrWhatsapp from '../../../Contact Us - TRANSMITEK_files/whatsapp-transmitek.jpg';
+import qrWechat from '../assets/wechat-transmitek.jpg';
+import qrWhatsapp from '../assets/whatsapp-transmitek.jpg';
 
 interface InquiryFormData {
   fullName: string;

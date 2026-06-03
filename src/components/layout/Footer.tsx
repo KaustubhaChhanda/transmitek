@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Shield, CheckCircle } from 'lucide-react';
 
 // Footer Logo Import
-import logoFooter from '../../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/logo_footer-300x47.png';
+import logoFooter from '../../assets/logo_footer-300x47.png';
 // QR Code Imports
-import qrWechat from '../../../../Contact Us - TRANSMITEK_files/wechat-transmitek.jpg';
-import qrWhatsapp from '../../../../Contact Us - TRANSMITEK_files/whatsapp-transmitek.jpg';
+import qrWechat from '../../assets/wechat-transmitek.jpg';
+import qrWhatsapp from '../../assets/whatsapp-transmitek.jpg';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();

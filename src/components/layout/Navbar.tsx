@@ -5,7 +5,7 @@ import { Menu, X, PhoneCall, Globe } from 'lucide-react';
 import { Button } from '../ui/Button';
 
 // Logo import
-import logoImg from '../../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/cropped-LOGO-2025-03.png';
+import logoImg from '../../assets/cropped-LOGO-2025-03.png';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

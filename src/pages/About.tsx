@@ -7,14 +7,14 @@ import { Certifications } from '../components/home/Certifications';
 import { ChevronRight, Landmark } from 'lucide-react';
 
 // Factory image imports
-import factoryLine from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/factory-assembly-line.jpg';
-import robotech from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/fanuc-robor-production.jpg';
-import cncMachining from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/transmitek-cnc.jpg';
-import precisionDoosan from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/Doosan-four-axis-precision-machining.jpg';
-import honingNet from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/honing-net-inside.jpg';
-import productAssembly from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/product-assembly-dept.jpg';
-import digitalManage from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/digital-managemenet-for-delivery.jpg';
-import labTesting from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/lab-comprehensive-testing.jpg';
+import factoryLine from '../assets/factory-assembly-line.jpg';
+import robotech from '../assets/fanuc-robor-production.jpg';
+import cncMachining from '../assets/transmitek-cnc.jpg';
+import precisionDoosan from '../assets/Doosan-four-axis-precision-machining.jpg';
+import honingNet from '../assets/honing-net-inside.jpg';
+import productAssembly from '../assets/product-assembly-dept.jpg';
+import digitalManage from '../assets/digital-managemenet-for-delivery.jpg';
+import labTesting from '../assets/lab-comprehensive-testing.jpg';
 
 export const About: React.FC = () => {
   // Scroll to top on mount

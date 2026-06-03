@@ -1,24 +1,24 @@
 import type { Product } from '../types';
 
 // Propeller Shafts
-import shaft1 from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/4-axle.webp';
-import shaft2 from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/propeller-cardan-drive-shaft-auto-parts-factory-china-scaled.jpg';
-import shaft3 from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/propshaft-transmission-driveline-tail-shaft-factory-china.jpg';
+import shaft1 from '../assets/4-axle.webp';
+import shaft2 from '../assets/propeller-cardan-drive-shaft-auto-parts-factory-china-scaled.jpg';
+import shaft3 from '../assets/propshaft-transmission-driveline-tail-shaft-factory-china.jpg';
 
 // GDI Pumps
-import pump1 from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/GDI-fuel-pump-1-scaled.jpg';
-import pump2 from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/transmitek-fuel-pump.jpg';
-import pump4 from '../../../Products - TRANSMITEK_files/0261520552-hpp2111-300x300.png';
-import pump5 from '../../../Products - TRANSMITEK_files/F01R00NB32-HPP220A-300x300.jpg';
+import pump1 from '../assets/GDI-fuel-pump-1-scaled.jpg';
+import pump2 from '../assets/transmitek-fuel-pump.jpg';
+import pump4 from '../assets/0261520552-hpp2111-300x300.png';
+import pump5 from '../assets/F01R00NB32-HPP220A-300x300.jpg';
 
 // Master Cylinders
-import master1 from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/pre-filled-clutch-cylinder-scaled.jpg';
-import master2 from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/prefilled-clutch-cylinder-1024x1024.jpg';
+import master1 from '../assets/pre-filled-clutch-cylinder-scaled.jpg';
+import master2 from '../assets/prefilled-clutch-cylinder-1024x1024.jpg';
 
 // Slave Cylinders
-import slave1 from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/CSC-Clutch-1024x1024.webp';
-import slave2 from '../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/clutch-release-bearing-1-scaled.jpg';
-import slave3 from '../../../Products - TRANSMITEK_files/clutch-release-bearing-1-300x300.jpg';
+import slave1 from '../assets/CSC-Clutch-1024x1024.webp';
+import slave2 from '../assets/clutch-release-bearing-1-scaled.jpg';
+import slave3 from '../assets/clutch-release-bearing-1-300x300.jpg';
 
 export const products: Product[] = [
   // ── Propeller Shafts ──

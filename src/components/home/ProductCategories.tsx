@@ -5,10 +5,10 @@ import { SectionHeading } from '../ui/SectionHeading';
 import { ArrowRight } from 'lucide-react';
 
 // Category Image Imports
-import imgShafts from '../../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/propeller-cardan-drive-shaft-auto-parts-factory-china-scaled.jpg';
-import imgGdiPumps from '../../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/GDI-fuel-pump-1-scaled.jpg';
-import imgMasters from '../../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/pre-filled-clutch-cylinder-scaled.jpg';
-import imgSlaves from '../../../../Leading Auto Parts Manufacturer in China _ Transmitek_files/CSC-Clutch-1024x1024.webp';
+import imgShafts from '../../assets/propeller-cardan-drive-shaft-auto-parts-factory-china-scaled.jpg';
+import imgGdiPumps from '../../assets/GDI-fuel-pump-1-scaled.jpg';
+import imgMasters from '../../assets/pre-filled-clutch-cylinder-scaled.jpg';
+import imgSlaves from '../../assets/CSC-Clutch-1024x1024.webp';
 
 export const ProductCategories: React.FC = () => {
   const navigate = useNavigate();
