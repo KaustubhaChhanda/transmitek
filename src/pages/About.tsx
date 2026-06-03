@@ -65,7 +65,7 @@ export const About: React.FC = () => {
     <div className="flex flex-col items-center w-full min-h-screen bg-white">
       
       {/* Page Hero Banner */}
-      <section className="bg-brand-dark text-white pt-28 pb-20 w-full relative overflow-hidden flex justify-center text-center">
+      <section className="bg-brand-dark text-white pt-36 pb-20 w-full relative overflow-hidden flex justify-center text-center">
         <div className="absolute left-10 top-0 w-80 h-80 bg-brand-red/5 rounded-full blur-[100px] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col items-center">
           {/* Breadcrumb */}

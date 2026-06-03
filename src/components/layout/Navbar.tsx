@@ -35,10 +35,9 @@ export const Navbar: React.FC = () => {
   ];
 
   const isActive = (path: string) => {
-    if (path === '/') {
-      return location.pathname === '/';
-    }
-    return location.pathname.startsWith(path);
+    const cleanPathname = location.pathname.replace(/\/$/, '');
+    const cleanLinkPath = path.replace(/\/$/, '');
+    return cleanPathname === cleanLinkPath;
   };
 
   return (
@@ -71,11 +70,10 @@ export const Navbar: React.FC = () => {
         </div>
       </motion.div>
 
-      {/* ── Main Navigation Bar ── */}
       <header
         className={`w-full transition-all duration-300 ${
-          isScrolled
-            ? 'bg-brand-dark/95 backdrop-blur-md border-b border-brand-border-dark py-3 shadow-lg shadow-black/30'
+          isOpen || isScrolled
+            ? 'bg-brand-dark border-b border-brand-border-dark py-3 shadow-lg shadow-black/30'
             : 'bg-transparent py-5'
         }`}
       >
@@ -126,7 +124,7 @@ export const Navbar: React.FC = () => {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white hover:text-brand-red focus:outline-none transition-colors cursor-pointer"
+            className="md:hidden text-white active:text-brand-red focus:outline-none transition-colors cursor-pointer"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -140,7 +138,7 @@ export const Navbar: React.FC = () => {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.25, ease: 'easeInOut' }}
-              className="md:hidden bg-brand-dark/98 backdrop-blur-lg border-b border-brand-border-dark absolute top-full left-0 right-0 overflow-hidden"
+              className="md:hidden bg-brand-dark border-b border-brand-border-dark absolute top-full left-0 right-0 overflow-hidden"
             >
               <div className="px-6 py-8 flex flex-col gap-5">
                 {navLinks.map((link) => (
@@ -150,7 +148,7 @@ export const Navbar: React.FC = () => {
                     className={`text-lg font-bold transition-colors py-2 border-b border-white/5 ${
                       isActive(link.path)
                         ? 'text-brand-red'
-                        : 'text-white hover:text-brand-red'
+                        : 'text-white active:text-brand-red'
                     }`}
                   >
                     {link.name}

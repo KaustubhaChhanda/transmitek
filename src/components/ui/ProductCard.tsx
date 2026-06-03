@@ -39,21 +39,25 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.5, delay: index * 0.05 }}
-      className="flex flex-col bg-white border border-brand-border rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 group h-full hover:border-brand-red/20"
+      className="flex flex-col bg-white border border-brand-border rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-brand-red/5 hover:-translate-y-1.5 transition-all duration-300 group h-full hover:border-brand-red/20"
     >
       {/* Product Image Container */}
-      <div className="relative overflow-hidden bg-brand-lighter aspect-[4/3] flex items-center justify-center p-4 border-b border-brand-border">
-        <motion.img
-          whileHover={{ scale: 1.06 }}
-          transition={{ duration: 0.4, ease: 'easeOut' }}
-          src={product.image}
-          alt={product.name}
-          className="object-contain max-h-[85%] max-w-[85%] mix-blend-multiply filter drop-shadow-md select-none"
-        />
-        <div className="absolute top-4 left-4">
+      <div className="relative overflow-hidden bg-brand-lighter flex flex-col p-4 border-b border-brand-border">
+        {/* Category Badge - positioned above the image to prevent overlap on mobile */}
+        <div className="flex justify-start mb-3">
           <Badge variant={product.category === 'gdi-pumps' ? 'blue' : 'red'}>
             {getCategoryLabel(product.category)}
           </Badge>
+        </div>
+
+        <div className="aspect-[4/3] flex items-center justify-center w-full overflow-hidden rounded-xl relative">
+          {/* Subtle colored glow overlay on card hover */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-brand-red/5 via-transparent to-brand-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+          <img
+            src={product.image}
+            alt={product.name}
+            className="object-contain max-h-[90%] max-w-[90%] mix-blend-multiply filter drop-shadow-md select-none transition-transform duration-500 ease-out group-hover:scale-110 z-10"
+          />
         </div>
       </div>
 
@@ -101,10 +105,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
         {/* Action Button */}
         <button
           onClick={handleInquiry}
-          className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-brand-lighter hover:bg-brand-red text-brand-heading hover:text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all duration-300 border border-brand-border hover:border-brand-red group/btn cursor-pointer"
+          className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-brand-lighter group-hover:bg-brand-red/5 text-brand-heading group-hover:text-brand-red hover:!bg-brand-red hover:!text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-all duration-300 border border-brand-border group-hover:border-brand-red/30 hover:!border-brand-red cursor-pointer"
         >
           Send Inquiry
-          <ChevronRight size={14} className="transform group-hover/btn:translate-x-1 transition-transform" />
+          <ChevronRight size={14} className="transform group-hover:translate-x-1.5 transition-transform duration-300" />
         </button>
       </div>
     </motion.div>

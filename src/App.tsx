@@ -5,10 +5,13 @@ import { Home } from './pages/Home';
 import { Products } from './pages/Products';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
+import { ChatbotAndWhatsapp } from './components/layout/ChatbotAndWhatsapp';
+import { ScrollToTop } from './components/layout/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-white">
         {/* Global sticky header navigation */}
         <Navbar />
@@ -24,6 +27,9 @@ function App() {
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
+
+        {/* Floating Actions: Chatbot & WhatsApp */}
+        <ChatbotAndWhatsapp />
 
         {/* Global structured footer links */}
         <Footer />
